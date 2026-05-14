@@ -21,6 +21,17 @@ Vanilla PPO gets 0 kills. Guardian PPO achieves ~24 kills per episode and a max 
 
 ---
 
+## 🧠 Agents Overview
+
+| Agent | Key Idea | Mean Score | Mean Kills |
+|-------|----------|------------|------------|
+| Vanilla PPO | Standard PPO (no shaping) | 0.0 | 0.0 |
+| PPO + Reward Shaping | Kill bonus, aim Gaussian bonus | 13.0 | 0.8 |
+| BC + PPO | BC pretraining → PPO fine-tune | 142.4 | 14.1 |
+| **Guardian PPO** | BC + Failure penalty + SIL | **327.8** | **24.0** |
+
+---
+
 ## AI Use Declaration
 During the development of this project, we used AI tools for:
 
