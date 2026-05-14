@@ -57,15 +57,18 @@ Writing assistance for the report and this README
 Brainstorming and "vibe coding" support
 
 However, all core model design, data collection, result interpretation, and final technical decisions were made by the authors (Paradorn & Jirapat), and all outputs have been manually verified
-
+---
 
 ##  Citation
 If you use this code or ideas, please cite:
-Khanongsuwan, P., Datephanyawat, J. (2025).
-BC-Guided Self-Imitation PPO for Shooter-v0.
-GitHub. https://github.com/iHazelly/Deep-Reinforcement-Learning-Shooter-GuardianPPO
 
+@inproceedings{khanongsuwan2025guardian,
+  title={BC-Guided Self-Imitation PPO: Failure-Informed Reinforcement Learning for a 3D Turret-Shooter Environment},
+  author={Khanongsuwan, Paradorn and Datephanyawat, Jirapat},
+  year={2025}
+}
 
+---
 
 ## Installation
 
