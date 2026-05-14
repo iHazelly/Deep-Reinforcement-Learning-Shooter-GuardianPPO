@@ -31,6 +31,19 @@ Vanilla PPO gets 0 kills. Guardian PPO achieves ~24 kills per episode and a max 
 | **Guardian PPO** | BC + Failure penalty + SIL | **327.8** | **24.0** |
 
 ---
+## 🏗️ Guardian PPO Training Pipeline
+
+1. **Expert Demonstration** – Scripted oracle with perfect aim generates ~511k (obs, action) pairs
+2. **Behavioral Cloning** – MLP (169→256→128→6) trained with cross-entropy (92% accuracy)
+3. **Failure Collection** – Run BC policy, record states with aim error > 0.15 or game over
+4. **Reward Shaping**:
+   - Failure penalty: `-1.0` if close to any failure state
+   - SIL bonus: `+0.2` if close to success state + action matches
+   - Aim reward: `2.0 * exp(-err²/0.1)` + extra `+5.0` for err < 0.04
+   - Tree penalty: `-10.0`, Repeat shot penalty: `-3.0`
+5. **Fine-tuning** – PPO with low LR (1e-5) for 820 episodes
+
+---
 
 ## AI Use Declaration
 During the development of this project, we used AI tools for:
