@@ -1,4 +1,7 @@
 # Deep-Reinforcement-Learning-Shooter-GuardianPPO
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Gymnasium](https://img.shields.io/badge/Gymnasium-0.29.0-green.svg)](https://gymnasium.farama.org/)
+
 Deep Reinforcement Learning for 3D Shooter-v0 Environment – Implemented and compared multiple DRL approaches: Vanilla PPO, PPO with Reward Shaping, and Behavioral Cloning + PPO. The project evolved through 30+ versions.
 
 This project is part of our Master's studies at the Asian Institute of Technology (AIT).  
