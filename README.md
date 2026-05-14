@@ -38,7 +38,9 @@ while not done:
     done = terminated or truncated
 env.close()
 
-AI Use Declaration
+
+
+## AI Use Declaration
 During the development of this project, we used AI tools for:
 
 Language translation and sentence refinement
@@ -51,7 +53,8 @@ Brainstorming and "vibe coding" support
 
 However, all core model design, data collection, result interpretation, and final technical decisions were made by the authors (Paradorn & Jirapat), and all outputs have been manually verified
 
-Citation
+
+##  Citation
 If you use this code or ideas, please cite:
 Khanongsuwan, P., Datephanyawat, J. (2025).
 BC-Guided Self-Imitation PPO for Shooter-v0.
