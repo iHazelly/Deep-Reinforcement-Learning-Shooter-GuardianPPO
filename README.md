@@ -6,15 +6,7 @@ We built a 3D turret-shooter environment called **Shooter-v0** and trained four 
 
 Vanilla PPO gets 0 kills. Guardian PPO achieves ~24 kills per episode and a max score of 750 (update version is 1500 max score in plain environment).
 
-## Repository Structure
-Deep-Reinforcement-Learning-Shooter-GuardianPPO/
-├── environment/ # Shooter-v0 Gym environment
-├── agents/ # Jupyter notebooks for all 4 models
-├── models/ # Pretrained model weights
-├── videos/ # Best episode recordings
-├── paper/ # PDF report and figures
-├── requirements.txt
-└── README.md
+
 
 ## Installation
 
