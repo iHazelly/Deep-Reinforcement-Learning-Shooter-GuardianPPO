@@ -44,6 +44,15 @@ Vanilla PPO gets 0 kills. Guardian PPO achieves ~24 kills per episode and a max 
 5. **Fine-tuning** – PPO with low LR (1e-5) for 820 episodes
 
 ---
+## 📝 Citation
+If you use this code or environment in your research, please cite:
+
+@inproceedings{khanongsuwan2025guardian,
+  title={BC-Guided Self-Imitation PPO: Failure-Informed Reinforcement Learning for a 3D Turret-Shooter Environment},
+  author={Khanongsuwan, Paradorn and Datephanyawat, Jirapat},
+  year={2025}
+}
+---
 
 ## AI Use Declaration
 During the development of this project, we used AI tools for:
@@ -57,16 +66,6 @@ Writing assistance for the report and this README
 Brainstorming and "vibe coding" support
 
 However, all core model design, data collection, result interpretation, and final technical decisions were made by the authors (Paradorn & Jirapat), and all outputs have been manually verified
----
-
-##  Citation
-If you use this code or ideas, please cite:
-
-@inproceedings{khanongsuwan2025guardian,
-  title={BC-Guided Self-Imitation PPO: Failure-Informed Reinforcement Learning for a 3D Turret-Shooter Environment},
-  author={Khanongsuwan, Paradorn and Datephanyawat, Jirapat},
-  year={2025}
-}
 
 ---
 
