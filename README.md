@@ -8,7 +8,7 @@ This project is part of our Master's studies at the Asian Institute of Technolog
 We built a 3D turret-shooter environment called **Shooter-v0** and trained four DRL agents: Vanilla PPO, PPO with Reward Shaping, BC + PPO, and our proposed **Guardian PPO** (BC + failure penalty + self-imitation learning).
 
 Vanilla PPO gets 0 kills. Guardian PPO achieves ~24 kills per episode and a max score of 750 (update version is 1500 max score in plain environment).
-
+📄 **Paper**: [DRL_project.pdf](paper/DRL_project.pdf)
 
 ## AI Use Declaration
 During the development of this project, we used AI tools for:
