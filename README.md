@@ -7,6 +7,27 @@ We built a 3D turret-shooter environment called **Shooter-v0** and trained four 
 Vanilla PPO gets 0 kills. Guardian PPO achieves ~24 kills per episode and a max score of 750 (update version is 1500 max score in plain environment).
 
 
+## AI Use Declaration
+During the development of this project, we used AI tools for:
+
+Language translation and sentence refinement
+
+Code suggestions, debugging, and structural guidance
+
+Writing assistance for the report and this README
+
+Brainstorming and "vibe coding" support
+
+However, all core model design, data collection, result interpretation, and final technical decisions were made by the authors (Paradorn & Jirapat), and all outputs have been manually verified
+
+
+##  Citation
+If you use this code or ideas, please cite:
+Khanongsuwan, P., Datephanyawat, J. (2025).
+BC-Guided Self-Imitation PPO for Shooter-v0.
+GitHub. https://github.com/iHazelly/Deep-Reinforcement-Learning-Shooter-GuardianPPO
+
+
 
 ## Installation
 
@@ -39,23 +60,3 @@ while not done:
 env.close()
 
 
-
-## AI Use Declaration
-During the development of this project, we used AI tools for:
-
-Language translation and sentence refinement
-
-Code suggestions, debugging, and structural guidance
-
-Writing assistance for the report and this README
-
-Brainstorming and "vibe coding" support
-
-However, all core model design, data collection, result interpretation, and final technical decisions were made by the authors (Paradorn & Jirapat), and all outputs have been manually verified
-
-
-##  Citation
-If you use this code or ideas, please cite:
-Khanongsuwan, P., Datephanyawat, J. (2025).
-BC-Guided Self-Imitation PPO for Shooter-v0.
-GitHub. https://github.com/iHazelly/Deep-Reinforcement-Learning-Shooter-GuardianPPO
