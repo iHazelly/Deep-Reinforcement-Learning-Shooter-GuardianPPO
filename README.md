@@ -83,59 +83,27 @@ env.close()
 ```
  
 ---
-
 ## 📝 Citation
+ 
 If you use this code or environment in your research, please cite:
-
+ 
+```bibtex
 @inproceedings{khanongsuwan2025guardian,
   title={BC-Guided Self-Imitation PPO: Failure-Informed Reinforcement Learning for a 3D Turret-Shooter Environment},
   author={Khanongsuwan, Paradorn and Datephanyawat, Jirapat},
   year={2025}
 }
+```
+ 
 ---
-
-## AI Use Declaration
+ 
+## 🤖 AI Use Declaration
+ 
 During the development of this project, we used AI tools for:
-
-Language translation and sentence refinement
-
-Code suggestions, debugging, and structural guidance
-
-Writing assistance for the report and this README
-
-Brainstorming and "vibe coding" support
-
-However, all core model design, data collection, result interpretation, and final technical decisions were made by the authors (Paradorn & Jirapat), and all outputs have been manually verified
-
----
-
-## Installation
-
-**Python 3.10 or 3.11 recommended**
-
-```bash
-pip install -r requirements.txt
-
-# Or install manually:
-pip install gymnasium numpy torch stable-baselines3 pygame PyOpenGL tensorboard matplotlib
-
-## Run the environment manually (keyboard control)
-python environment/shooter/play_shooter.py
-
-## Load and run Guardian PPO
-
-from stable_baselines3 import PPO
-import gymnasium as gym
-import shooter
-
-model = PPO.load("models/guardian_ppo.zip")
-env = gym.make("Shooter-v0", render_mode="human")
-
-obs, _ = env.reset()
-done = False
-while not done:
-    action, _ = model.predict(obs, deterministic=True)
-    obs, reward, terminated, truncated, _ = env.step(action)
-    done = terminated or truncated
-env.close()
-
+ 
+- Language translation and sentence refinement
+- Code suggestions, debugging, and structural guidance
+- Writing assistance for the report and this README
+- Brainstorming and "vibe coding" support
+However, all core model design, data collection, result interpretation, and final technical decisions were made by the authors (Paradorn & Jirapat), and all outputs have been manually verified.
+ 
