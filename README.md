@@ -44,6 +44,46 @@ Vanilla PPO gets 0 kills. Guardian PPO achieves ~24 kills per episode and a max 
 5. **Fine-tuning** – PPO with low LR (1e-5) for 820 episodes
 
 ---
+## 🔧 Installation
+ 
+Python 3.10 or 3.11 recommended
+ 
+```bash
+pip install -r requirements.txt
+# Or install manually:
+pip install gymnasium numpy torch stable-baselines3 pygame PyOpenGL tensorboard matplotlib
+```
+ 
+---
+ 
+## ▶️ Usage
+ 
+**Run the environment manually (keyboard control)**
+ 
+```bash
+python environment/shooter/play_shooter.py
+```
+ 
+**Load and run Guardian PPO**
+ 
+```python
+from stable_baselines3 import PPO
+import gymnasium as gym
+import shooter
+ 
+model = PPO.load("models/guardian_ppo.zip")
+env = gym.make("Shooter-v0", render_mode="human")
+obs, _ = env.reset()
+done = False
+while not done:
+    action, _ = model.predict(obs, deterministic=True)
+    obs, reward, terminated, truncated, _ = env.step(action)
+    done = terminated or truncated
+env.close()
+```
+ 
+---
+
 ## 📝 Citation
 If you use this code or environment in your research, please cite:
 
